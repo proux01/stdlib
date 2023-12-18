@@ -1,0 +1,53 @@
+digraph stdlib_deps {
+	node [color=lightblue,
+		shape=ellipse,
+		style=filled
+	];
+	"coq-stdlib" -> "coq-stdlib-set-map";
+	"coq-stdlib" -> "coq-stdlib-wellfounded";
+	"coq-stdlib" -> "coq-stdlib-derive";
+	"coq-stdlib" -> "coq-stdlib-rtauto";
+	"coq-stdlib" -> "coq-stdlib-compat";
+	"coq-stdlib" -> "coq-stdlib-nsatz";
+	"coq-stdlib" -> "coq-stdlib-micromega-extraction";
+	"coq-stdlib-bool" -> "coq-stdlib-classes";
+	"coq-stdlib-classes" -> "coq-stdlib-relations";
+	"coq-stdlib-classes" -> "coq-stdlib-program";
+	"coq-stdlib-program" -> "coq-stdlib-logic";
+	"coq-stdlib-vectors" -> "coq-stdlib-list";
+	"coq-stdlib-list" -> "coq-stdlib-positive";
+	"coq-stdlib-positive" -> "coq-stdlib-arith";
+	"coq-stdlib-arith" -> "coq-stdlib-structures";
+	"coq-stdlib-structures" -> "coq-stdlib-bool";
+	"coq-stdlib-structures" -> "coq-stdlib-setoids";
+	"coq-stdlib-setoids" -> "coq-stdlib-classes";
+	"coq-stdlib-set-map" -> "coq-stdlib-orders-ex";
+	"coq-stdlib-set-map" -> "coq-stdlib-funind";
+	"coq-stdlib-orders-ex" -> "coq-stdlib-string";
+	"coq-stdlib-orders-ex" -> "coq-stdlib-sorting";
+	"coq-stdlib-funind" -> "coq-stdlib-extraction";
+	"coq-stdlib-string" -> "coq-stdlib-nzarith";
+	"coq-stdlib-sorting" -> "coq-stdlib-sets";
+	"coq-stdlib-extraction" -> "coq-stdlib-string";
+	"coq-stdlib-extraction" -> "coq-stdlib-primitive-floats";
+	"coq-stdlib-extraction" -> "coq-stdlib-primitive-array";
+	"coq-stdlib-nzarith" -> "coq-stdlib-list";
+	"coq-stdlib-reals" -> "coq-stdlib-vectors";
+	"coq-stdlib-sorting" -> "coq-stdlib-vectors";
+	"coq-stdlib-string" -> "coq-stdlib-vectors";
+	"coq-stdlib-sets" -> "coq-stdlib-classical-logic";
+	"coq-stdlib-classical-logic" -> "coq-stdlib-nzarith";
+	"coq-stdlib-reals" -> "coq-stdlib-classical-logic";
+	"coq-stdlib-reals" -> "coq-stdlib-qarith";
+	"coq-stdlib-qarith" -> "coq-stdlib-nzarith";
+	"coq-stdlib-primitive-int" -> "coq-stdlib-nzarith";
+	"coq-stdlib-primitive-int" -> "coq-stdlib-unicode";
+	"coq-stdlib-primitive-floats" -> "coq-stdlib-primitive-int";
+	"coq-stdlib-primitive-array" -> "coq-stdlib-primitive-int";
+	"coq-stdlib-wellfounded" -> "coq-stdlib-list";
+	"coq-stdlib-micromega-extraction" -> "coq-stdlib-extraction";
+	"coq-stdlib-micromega-extraction" -> "coq-stdlib-reals";
+	"coq-stdlib-nsatz" -> "coq-stdlib-reals";
+	"coq-stdlib-rtauto" -> "coq-stdlib-list";
+	"coq-stdlib-compat" -> "coq-stdlib-nzarith";
+}
